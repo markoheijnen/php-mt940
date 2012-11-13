@@ -341,7 +341,7 @@ class Engine_mt940_banking_parser {
 	 * @return string
 	 */
 	function _sanitizeAccountName($string) {
-		return preg_replace('/[\s]+/', PHP_EOL, trim($string));
+		return trim( $string );
 	}
 
 	/**
